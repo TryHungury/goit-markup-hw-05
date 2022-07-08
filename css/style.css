@@ -182,15 +182,29 @@ a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
 }
-
-/* Лише навігація */
+    /* Лише навігація */
 .nav-list .link {
     color: var(--color-primary);  
-    padding: 8px 0;
-    
+    padding: 8px 0; 
+    /* display: block;
+    width: 80px;   */
 } 
+.nav-list .link {
+    position: relative;
+}
+.link .current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -25px;
+    left: 0px;
+    border-radius: 2px;
+    background-color: var(--color-background-accent);
+}
 
 /* Ховер, фокус */
 .nav-list .link:hover,
@@ -601,7 +615,7 @@ main {
     padding: 63px 24px;
     background-color: var(--color-background-accent);
     opacity: 0.9;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms;
 }
 .portfolio-list-link:hover .box-overlay,
