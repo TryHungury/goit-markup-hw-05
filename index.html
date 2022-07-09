@@ -74,11 +74,21 @@
       <section class="hero">
         <div class="container container-details">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button flex-box" type="button">
+          <button class="hero-button flex-box" type="button"  data-modal-open > 
             Заказать услугу
           </button>
         </div>
       </section>
+      <!-- Модальне вікно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-icon-button" data-modal-close type="button"> 
+            <svg class="modal-icon-close">
+              <use href="./images/icons/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <!-- Наші переваги -->
       <section class="container-default-padding">
         <div class="container">
