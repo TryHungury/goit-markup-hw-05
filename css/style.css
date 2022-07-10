@@ -258,7 +258,9 @@ main {
 
 /* Герой */
 .hero {
-    background-image: url('../images/photo-main/section-hero/hero-bg.jpg');
+    background-image: 
+    linear-gradient(#2f303a66, #2f303a66),
+    url('../images/photo-main/section-hero/hero-bg.jpg');
     background-color: var(--color-background-secondary);
     background-repeat: no-repeat;
     background-position: center;
